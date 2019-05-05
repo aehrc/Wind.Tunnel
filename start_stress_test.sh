@@ -41,7 +41,7 @@ fi
 # Sanity check that we can connect to Vonk
 test_command="curl -sL \
     -w "%{http_code}\\n" \
-    "$host/Patient?_format=json" \
+    "$host/metadata?_format=json" \
     -o /dev/null \
     --connect-timeout 10 \
     --max-time 5"
